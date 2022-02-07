@@ -1,0 +1,40 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Service Template",
+        "title": "Service Template",
+        "contact": {},
+        "version": "1.0"
+    },
+    "host": "localhost:8000",
+    "basePath": "/v1",
+    "paths": {
+        "/": {
+            "get": {
+                "description": "Show API info",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "api info"
+                ],
+                "summary": "Show API info",
+                "operationId": "index",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "500": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+basePath: /v1
+host: localhost:8000
+info:
+  contact: {}
+  description: Service Template
+  title: Service Template
+  version: "1.0"
+paths:
+  /:
+    get:
+      consumes:
+      - application/json
+      description: Show API info
+      operationId: index
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "500":
+          description: ""
+      summary: Show API info
+      tags:
+      - api info
+swagger: "2.0"

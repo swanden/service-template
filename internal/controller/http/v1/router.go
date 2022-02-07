@@ -3,11 +3,24 @@ package v1
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
+
+	swaggerFiles "github.com/swaggo/files"
+	ginSwagger "github.com/swaggo/gin-swagger"
+	_ "github.com/swanden/service-template/docs"
 )
 
+// Swagger spec:
+// @title       Service Template
+// @description Service Template
+// @version     1.0
+// @host        localhost:8000
+// @BasePath    /v1
 func NewRouter(handler *gin.Engine) {
 	handler.Use(gin.Logger())
 	handler.Use(gin.Recovery())
+
+	//swaggerHandler := ginSwagger.DisablingWrapHandler(swaggerFiles.Handler, "DISABLE_SWAGGER_HTTP_HANDLER")
+	handler.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 
 	h := handler.Group("/v1")
 	{
@@ -15,13 +28,22 @@ func NewRouter(handler *gin.Engine) {
 	}
 }
 
-type serverInfo struct {
+type apiInfo struct {
 	Name    string `json:"name"`
 	Version string `json:"version"`
 }
 
+// @Summary     Show API info
+// @Description Show API info
+// @ID          index
+// @Tags  	    api info
+// @Accept      json
+// @Produce     json
+// @Success     200 {string} apiInfo
+// @Failure     500
+// @Router      / [get]
 func index(c *gin.Context) {
-	info := serverInfo{
+	info := apiInfo{
 		Name:    "API",
 		Version: "1.0",
 	}
