@@ -3,3 +3,13 @@
 2022-02-03 15:05:18 +0300	DEBUG	application started	{"TestName": "TestValue"}
 2022-02-03 15:06:46 +0300	DEBUG	application started	{"TestName": "TestValue"}
 2022-02-03 15:09:00 +0300	DEBUG	application started	{"TestName": "TestValue"}
+2022-02-07 10:50:41 +0300	INFO	Application started
+2022-02-07 10:51:05 +0300	INFO	app - Run - signal: interrupt
+2022-02-07 11:03:03 +0300	INFO	app - Run - httpserver.start
+2022-02-07 11:03:08 +0300	INFO	app - Run - signal: interrupt
+2022-02-07 13:08:07 +0300	INFO	app - Run - server start on :8000
+2022-02-07 13:08:07 +0300	ERROR	app - Run - httpServer.Notify: listen tcp: address ::8000: too many colons in address
+2022-02-07 13:08:39 +0300	INFO	app - Run - server start on 8000
+2022-02-07 13:09:43 +0300	INFO	app - Run - signal: interrupt
+2022-02-07 13:09:45 +0300	INFO	app - Run - server start on 8000
+2022-02-07 13:10:14 +0300	INFO	app - Run - signal: interrupt

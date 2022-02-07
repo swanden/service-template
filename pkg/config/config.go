@@ -10,6 +10,10 @@ type Config struct {
 		Level string
 		File  string
 	}
+
+	HTTP struct {
+		Port string
+	}
 }
 
 func New(confFile string) (*Config, error) {
@@ -20,6 +24,7 @@ func New(confFile string) (*Config, error) {
 	viper.SetConfigFile(confFile)
 
 	config := &Config{}
+
 	if err := viper.ReadInConfig(); err != nil {
 		return config, err
 	}
