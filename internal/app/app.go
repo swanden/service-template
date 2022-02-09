@@ -1,8 +1,11 @@
 package app
 
 import (
+	"flag"
 	"fmt"
 	v1 "github.com/swanden/service-template/internal/controller/http/v1"
+	"github.com/swanden/service-template/internal/domain/user/entity"
+	"github.com/swanden/service-template/pkg/database"
 	"log"
 	"os"
 	"os/signal"
@@ -15,7 +18,11 @@ import (
 	"github.com/swanden/service-template/pkg/logger"
 )
 
+var migrate = flag.Bool("m", false, "Run migrations")
+
 func Run(configFile string) {
+	flag.Parse()
+
 	conf, err := config.New(configFile)
 	if err != nil {
 		log.Fatalf("Config error: %s", err)
@@ -25,6 +32,18 @@ func Run(configFile string) {
 	l, err = logger.New(conf.Logger.File, conf.Logger.Level)
 	if err != nil {
 		log.Fatalf("Logger error: %s", err)
+	}
+
+	db, err := database.New(conf.Postgres.DSN)
+	if err != nil {
+		log.Fatalf("Database error: %s", err)
+	}
+	if *migrate {
+		err = db.Migrate(&entity.User{})
+		if err != nil {
+			log.Fatalf("Migrate error: %s", err)
+		}
+		l.Info("app - Migrations applied")
 	}
 
 	handler := gin.New()

@@ -1,5 +1,6 @@
 logger:
   file: log/app.log
   level: debug
-HTTP:
+http:
   port: "8000"
+postgres:

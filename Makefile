@@ -9,7 +9,7 @@ swagger-init:
 	swag init -g internal/controller/http/v1/router.go
 
 compose-up:
-	docker-compose up --build -d && docker-compose logs -f
+	docker-compose up --build -d postgres && docker-compose logs -f
 
 compose-down:
 	docker-compose down --remove-orphans

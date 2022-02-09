@@ -33,3 +33,22 @@
 2022-02-07 14:11:31 +0300	INFO	app - Run - signal: interrupt
 2022-02-07 14:11:33 +0300	INFO	app - Run - server start on 8000
 2022-02-07 14:12:16 +0300	INFO	app - Run - signal: interrupt
+2022-02-08 13:06:37 +0300	INFO	app - Run - server start on 8000
+2022-02-09 10:10:16 +0300	INFO	app - Run - server start on 8000
+2022-02-09 10:11:44 +0300	INFO	app - Run - signal: interrupt
+2022-02-09 10:24:20 +0300	INFO	app - Run - server start on 8000
+2022-02-09 10:24:33 +0300	INFO	app - Run - signal: interrupt
+2022-02-09 10:27:02 +0300	INFO	app - Run - server start on 8000
+2022-02-09 10:29:25 +0300	INFO	app - Run - signal: interrupt
+2022-02-09 10:29:28 +0300	INFO	app - Run - server start on 8000
+2022-02-09 10:29:53 +0300	INFO	app - Run - signal: interrupt
+2022-02-09 10:29:59 +0300	INFO	app - Run - server start on 8000
+2022-02-09 10:30:35 +0300	INFO	app - Run - signal: interrupt
+2022-02-09 12:56:48 +0300	INFO	app - Run - server start on 8000
+2022-02-09 12:56:53 +0300	INFO	app - Run - signal: interrupt
+2022-02-09 13:14:05 +0300	INFO	app - Migrations applied
+2022-02-09 13:14:05 +0300	INFO	app - Run - server start on 8000
+2022-02-09 13:14:23 +0300	INFO	app - Run - signal: interrupt
+2022-02-09 13:14:26 +0300	INFO	app - Migrations applied
+2022-02-09 13:14:26 +0300	INFO	app - Run - server start on 8000
+2022-02-09 13:21:26 +0300	INFO	app - Run - signal: interrupt

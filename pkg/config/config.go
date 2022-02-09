@@ -2,18 +2,28 @@ package config
 
 import (
 	"fmt"
-	"github.com/spf13/viper"
+	"github.com/ilyakaznacheev/cleanenv"
+	"github.com/joho/godotenv"
+	"os"
 )
 
 type Config struct {
-	Logger struct {
-		Level string
-		File  string
-	}
+	Logger   `yaml:"logger"`
+	HTTP     `yaml:"http"`
+	Postgres `yaml:"postgres"`
+}
 
-	HTTP struct {
-		Port string
-	}
+type Logger struct {
+	Level string `env-required:"true" yaml:"level"`
+	File  string `env-required:"true" yaml:"file"`
+}
+
+type HTTP struct {
+	Port string `env-required:"true" yaml:"port"`
+}
+
+type Postgres struct {
+	DSN string `env-required:"true" env:"PG_DSN"`
 }
 
 func New(confFile string) (*Config, error) {
@@ -21,16 +31,22 @@ func New(confFile string) (*Config, error) {
 		return nil, fmt.Errorf("confFile can't be empty")
 	}
 
-	viper.SetConfigFile(confFile)
-
-	config := &Config{}
-
-	if err := viper.ReadInConfig(); err != nil {
-		return config, err
+	if _, err := os.Stat(".env"); err == nil {
+		err = godotenv.Load()
+		if err != nil {
+			return nil, err
+		}
 	}
 
-	if err := viper.Unmarshal(&config); err != nil {
-		return config, err
+	config := &Config{}
+	err := cleanenv.ReadConfig(confFile, config)
+	if err != nil {
+		return nil, fmt.Errorf("config error: %w", err)
+	}
+
+	err = cleanenv.ReadEnv(config)
+	if err != nil {
+		return nil, err
 	}
 
 	return config, nil
