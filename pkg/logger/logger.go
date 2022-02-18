@@ -7,17 +7,24 @@ import (
 	"time"
 )
 
-type Filed struct {
+type Field struct {
 	Name  string
-	Value interface{}
+	Value any
+}
+
+func NewField(name string, value any) Field {
+	return Field{
+		Name:  name,
+		Value: value,
+	}
 }
 
 type Interface interface {
-	Debug(message interface{}, args ...Filed)
-	Info(message interface{}, args ...Filed)
-	Warn(message interface{}, args ...Filed)
-	Error(message interface{}, args ...Filed)
-	Fatal(message interface{}, args ...Filed)
+	Debug(message any, args ...Field)
+	Info(message any, args ...Field)
+	Warn(message any, args ...Field)
+	Error(message any, args ...Field)
+	Fatal(message any, args ...Field)
 }
 
 type Logger struct {
@@ -72,42 +79,42 @@ func New(file, level string) (*Logger, error) {
 	return &Logger{logger: logger}, nil
 }
 
-func (l *Logger) Debug(message interface{}, args ...Filed) {
+func (l *Logger) Debug(message any, args ...Field) {
 	msg := l.msg(message)
 	zapArgs := l.args(args...)
 
 	l.logger.Debug(msg, zapArgs...)
 }
 
-func (l *Logger) Info(message interface{}, args ...Filed) {
+func (l *Logger) Info(message any, args ...Field) {
 	msg := l.msg(message)
 	zapArgs := l.args(args...)
 
 	l.logger.Info(msg, zapArgs...)
 }
 
-func (l *Logger) Warn(message interface{}, args ...Filed) {
+func (l *Logger) Warn(message any, args ...Field) {
 	msg := l.msg(message)
 	zapArgs := l.args(args...)
 
 	l.logger.Warn(msg, zapArgs...)
 }
 
-func (l *Logger) Error(message interface{}, args ...Filed) {
+func (l *Logger) Error(message any, args ...Field) {
 	msg := l.msg(message)
 	zapArgs := l.args(args...)
 
 	l.logger.Error(msg, zapArgs...)
 }
 
-func (l *Logger) Fatal(message interface{}, args ...Filed) {
+func (l *Logger) Fatal(message any, args ...Field) {
 	msg := l.msg(message)
 	zapArgs := l.args(args...)
 
 	l.logger.Fatal(msg, zapArgs...)
 }
 
-func (l *Logger) msg(message interface{}) string {
+func (l *Logger) msg(message any) string {
 	switch message := message.(type) {
 	case error:
 		return message.Error()
@@ -118,7 +125,7 @@ func (l *Logger) msg(message interface{}) string {
 	return fmt.Sprint(message)
 }
 
-func (l *Logger) args(args ...Filed) []zap.Field {
+func (l *Logger) args(args ...Field) []zap.Field {
 	var zapArgs []zap.Field
 	for _, arg := range args {
 		switch a := arg.Value.(type) {

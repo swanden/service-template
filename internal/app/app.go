@@ -3,8 +3,11 @@ package app
 import (
 	"flag"
 	"fmt"
+	"github.com/go-playground/validator/v10"
 	v1 "github.com/swanden/service-template/internal/controller/http/v1"
 	"github.com/swanden/service-template/internal/domain/user/entity"
+	"github.com/swanden/service-template/internal/domain/user/usecase"
+	"github.com/swanden/service-template/internal/infrastructure/domain/user/repository"
 	"github.com/swanden/service-template/pkg/database"
 	"log"
 	"os"
@@ -43,11 +46,15 @@ func Run(configFile string) {
 		if err != nil {
 			log.Fatalf("Migrate error: %s", err)
 		}
-		l.Info("app - Migrations applied")
+		l.Info("app - Run - migrations applied")
 	}
 
+	userRepository := repository.New(db)
+	userUseCase := usecase.New(userRepository)
+	validate := validator.New()
+
 	handler := gin.New()
-	v1.NewRouter(handler)
+	v1.NewRouter(handler, userRepository, userUseCase, validate, l)
 	httpServer := httpserver.New(handler, httpserver.Port(conf.HTTP.Port))
 
 	l.Info("app - Run - server start on " + conf.HTTP.Port)

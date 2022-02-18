@@ -52,3 +52,142 @@
 2022-02-09 13:14:26 +0300	INFO	app - Migrations applied
 2022-02-09 13:14:26 +0300	INFO	app - Run - server start on 8000
 2022-02-09 13:21:26 +0300	INFO	app - Run - signal: interrupt
+2022-02-09 15:45:52 +0300	INFO	app - Run - migrations applied
+2022-02-09 15:45:52 +0300	INFO	app - Run - server start on 8000
+2022-02-09 15:46:58 +0300	INFO	app - Run - signal: interrupt
+2022-02-09 15:47:00 +0300	INFO	app - Run - migrations applied
+2022-02-09 15:47:00 +0300	INFO	app - Run - server start on 8000
+2022-02-09 15:51:53 +0300	INFO	app - Run - signal: interrupt
+2022-02-09 15:51:55 +0300	INFO	app - Run - migrations applied
+2022-02-09 15:51:55 +0300	INFO	app - Run - server start on 8000
+2022-02-09 15:52:18 +0300	INFO	app - Run - signal: interrupt
+2022-02-09 15:52:20 +0300	INFO	app - Run - migrations applied
+2022-02-09 15:52:20 +0300	INFO	app - Run - server start on 8000
+2022-02-09 15:56:39 +0300	INFO	app - Run - signal: interrupt
+2022-02-09 15:56:42 +0300	INFO	app - Run - migrations applied
+2022-02-09 15:56:42 +0300	INFO	app - Run - server start on 8000
+2022-02-09 15:57:38 +0300	INFO	app - Run - signal: interrupt
+2022-02-09 15:57:40 +0300	INFO	app - Run - migrations applied
+2022-02-09 15:57:40 +0300	INFO	app - Run - server start on 8000
+2022-02-09 15:58:07 +0300	INFO	app - Run - signal: interrupt
+2022-02-09 15:58:09 +0300	INFO	app - Run - migrations applied
+2022-02-09 15:58:09 +0300	INFO	app - Run - server start on 8000
+2022-02-09 16:02:11 +0300	INFO	app - Run - signal: interrupt
+2022-02-09 16:03:58 +0300	INFO	app - Run - migrations applied
+2022-02-09 16:03:58 +0300	INFO	app - Run - server start on 8000
+2022-02-09 16:04:24 +0300	INFO	app - Run - signal: interrupt
+2022-02-09 16:05:46 +0300	INFO	app - Run - migrations applied
+2022-02-09 16:05:46 +0300	INFO	app - Run - server start on 8000
+2022-02-09 16:06:25 +0300	INFO	app - Run - signal: interrupt
+2022-02-09 16:06:28 +0300	INFO	app - Run - migrations applied
+2022-02-09 16:06:28 +0300	INFO	app - Run - server start on 8000
+2022-02-09 16:17:17 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 08:28:28 +0300	INFO	app - Run - migrations applied
+2022-02-10 08:28:28 +0300	INFO	app - Run - server start on 8000
+2022-02-10 08:29:32 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 08:29:43 +0300	INFO	app - Run - migrations applied
+2022-02-10 08:29:43 +0300	INFO	app - Run - server start on 8000
+2022-02-10 08:30:14 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 08:30:18 +0300	INFO	app - Run - migrations applied
+2022-02-10 08:30:18 +0300	INFO	app - Run - server start on 8000
+2022-02-10 08:30:34 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 08:33:47 +0300	INFO	app - Run - migrations applied
+2022-02-10 08:33:47 +0300	INFO	app - Run - server start on 8000
+2022-02-10 08:34:17 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 08:34:19 +0300	INFO	app - Run - migrations applied
+2022-02-10 08:34:19 +0300	INFO	app - Run - server start on 8000
+2022-02-10 08:36:42 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 08:36:45 +0300	INFO	app - Run - migrations applied
+2022-02-10 08:36:45 +0300	INFO	app - Run - server start on 8000
+2022-02-10 08:55:42 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 08:55:44 +0300	INFO	app - Run - migrations applied
+2022-02-10 08:55:44 +0300	INFO	app - Run - server start on 8000
+2022-02-10 08:58:02 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 08:58:05 +0300	INFO	app - Run - migrations applied
+2022-02-10 08:58:05 +0300	INFO	app - Run - server start on 8000
+2022-02-10 09:57:07 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 12:57:39 +0300	INFO	app - Run - server start on 8000
+2022-02-10 13:20:48 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 13:20:53 +0300	INFO	app - Run - server start on 8000
+2022-02-10 13:24:41 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 13:24:45 +0300	INFO	app - Run - server start on 8000
+2022-02-10 13:28:32 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 13:28:35 +0300	INFO	app - Run - server start on 8000
+2022-02-10 13:29:20 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 13:29:23 +0300	INFO	app - Run - server start on 8000
+2022-02-10 13:29:51 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 13:29:53 +0300	INFO	app - Run - server start on 8000
+2022-02-10 13:30:35 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 13:30:37 +0300	INFO	app - Run - server start on 8000
+2022-02-10 13:31:00 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 13:31:02 +0300	INFO	app - Run - server start on 8000
+2022-02-10 13:31:33 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 13:31:35 +0300	INFO	app - Run - server start on 8000
+2022-02-10 13:34:19 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 13:34:21 +0300	INFO	app - Run - server start on 8000
+2022-02-10 13:36:07 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 13:36:10 +0300	INFO	app - Run - server start on 8000
+2022-02-10 13:54:34 +0300	INFO	app - Run - signal: interrupt
+2022-02-10 13:54:36 +0300	INFO	app - Run - server start on 8000
+2022-02-10 13:59:19 +0300	INFO	app - Run - signal: interrupt
+2022-02-17 10:23:33 +0300	INFO	app - Run - server start on 8000
+2022-02-17 10:42:52 +0300	INFO	app - Run - signal: interrupt
+2022-02-17 10:42:54 +0300	INFO	app - Run - server start on 8000
+2022-02-17 10:45:54 +0300	INFO	app - Run - signal: interrupt
+2022-02-17 10:45:56 +0300	INFO	app - Run - server start on 8000
+2022-02-17 12:16:33 +0300	INFO	app - Run - server start on 8000
+2022-02-17 12:17:44 +0300	INFO	app - Run - signal: interrupt
+2022-02-17 12:17:47 +0300	INFO	app - Run - server start on 8000
+2022-02-17 12:32:28 +0300	INFO	app - Run - signal: interrupt
+2022-02-17 13:00:52 +0300	INFO	app - Run - server start on 8000
+2022-02-17 13:01:03 +0300	ERROR	Key: 'createRequest.Email' Error:Field validation for 'Email' failed on the 'email' tag
+	{"destination": "http - v1 - userController - create"}
+2022-02-17 13:02:05 +0300	ERROR	Key: 'createRequest.Email' Error:Field validation for 'Email' failed on the 'email' tag
+	{"destination": "http - v1 - userController - create"}
+2022-02-17 13:02:13 +0300	INFO	app - Run - signal: interrupt
+2022-02-17 13:02:16 +0300	INFO	app - Run - server start on 8000
+2022-02-17 13:03:13 +0300	INFO	app - Run - signal: interrupt
+2022-02-17 13:03:15 +0300	INFO	app - Run - server start on 8000
+2022-02-17 13:03:18 +0300	ERROR	Key: 'createRequest.Email' Error:Field validation for 'Email' failed on the 'email' tag
+Key: 'createRequest.Password' Error:Field validation for 'Password' failed on the 'min' tag
+	{"destination": "http - v1 - userController - create"}
+2022-02-17 13:10:15 +0300	INFO	app - Run - signal: interrupt
+2022-02-18 11:55:34 +0300	INFO	app - Run - server start on 8000
+2022-02-18 12:06:48 +0300	INFO	app - Run - signal: interrupt
+2022-02-18 12:07:07 +0300	INFO	app - Run - server start on 8000
+2022-02-18 12:08:51 +0300	INFO	app - Run - signal: interrupt
+2022-02-18 12:08:55 +0300	INFO	app - Run - server start on 8000
+2022-02-18 12:10:07 +0300	INFO	app - Run - signal: interrupt
+2022-02-18 12:10:12 +0300	INFO	app - Run - server start on 8000
+2022-02-18 12:12:54 +0300	INFO	app - Run - signal: interrupt
+2022-02-18 12:13:33 +0300	INFO	app - Run - server start on 8000
+2022-02-18 12:14:05 +0300	ERROR	EOF	{"destination": "http - v1 - userController - create"}
+2022-02-18 12:24:26 +0300	INFO	app - Run - signal: interrupt
+2022-02-18 12:24:32 +0300	INFO	app - Run - server start on 8000
+2022-02-18 12:27:08 +0300	INFO	app - Run - signal: interrupt
+2022-02-18 12:27:12 +0300	INFO	app - Run - server start on 8000
+2022-02-18 12:41:43 +0300	ERROR	Key: 'createRequest.Email' Error:Field validation for 'Email' failed on the 'email' tag
+Key: 'createRequest.Password' Error:Field validation for 'Password' failed on the 'min' tag
+	{"destination": "http - v1 - userController - create"}
+2022-02-18 12:41:49 +0300	INFO	app - Run - signal: interrupt
+2022-02-18 12:41:52 +0300	INFO	app - Run - server start on 8000
+2022-02-18 12:41:55 +0300	ERROR	Key: 'createRequest.Email' Error:Field validation for 'Email' failed on the 'email' tag
+Key: 'createRequest.Password' Error:Field validation for 'Password' failed on the 'min' tag	{"destination": "http - v1 - userController - create"}
+2022-02-18 12:50:21 +0300	ERROR	Key: 'createRequest.Email' Error:Field validation for 'Email' failed on the 'email' tag
+Key: 'createRequest.Password' Error:Field validation for 'Password' failed on the 'min' tag	{"destination": "http - v1 - userController - create"}
+2022-02-18 12:50:23 +0300	INFO	app - Run - signal: interrupt
+2022-02-18 12:50:26 +0300	INFO	app - Run - server start on 8000
+2022-02-18 12:50:29 +0300	ERROR	Key: 'createRequest.Email' Error:Field validation for 'Email' failed on the 'email' tag
+Key: 'createRequest.Password' Error:Field validation for 'Password' failed on the 'min' tag	{"destination": "http - v1 - userController - create"}
+2022-02-18 13:07:51 +0300	INFO	app - Run - signal: interrupt
+2022-02-18 13:07:57 +0300	INFO	app - Run - server start on 8000
+2022-02-18 13:09:55 +0300	ERROR	ERROR: syntax error at or near "a0d5cc3" (SQLSTATE 42601)	{"destination": "http - v1 - userController - delete"}
+2022-02-18 13:12:16 +0300	INFO	app - Run - signal: interrupt
+2022-02-18 13:12:18 +0300	INFO	app - Run - server start on 8000
+2022-02-18 13:12:23 +0300	ERROR	ERROR: syntax error at or near "a0d5cc3" (SQLSTATE 42601)	{"destination": "http - v1 - userController - delete"}
+2022-02-18 13:14:51 +0300	INFO	app - Run - signal: interrupt
+2022-02-18 13:14:54 +0300	INFO	app - Run - server start on 8000
+2022-02-18 13:14:57 +0300	ERROR	expected 0 arguments, got 1	{"destination": "http - v1 - userController - delete"}
+2022-02-18 13:15:13 +0300	INFO	app - Run - signal: interrupt
+2022-02-18 13:15:19 +0300	INFO	app - Run - server start on 8000
+2022-02-18 13:17:27 +0300	INFO	app - Run - signal: interrupt

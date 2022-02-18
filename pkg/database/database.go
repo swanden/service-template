@@ -19,5 +19,10 @@ func New(dsn string) (*DB, error) {
 }
 
 func (db *DB) Migrate(dst ...interface{}) error {
+	err := db.Migrator().DropTable(dst...)
+	if err != nil {
+		return nil
+	}
+
 	return db.DB.AutoMigrate(dst...)
 }

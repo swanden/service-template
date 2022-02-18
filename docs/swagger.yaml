@@ -1,4 +1,49 @@
 basePath: /v1
+definitions:
+  v1.allResponse:
+    properties:
+      users:
+        items:
+          $ref: '#/definitions/v1.allResponseUser'
+        type: array
+    type: object
+  v1.allResponseUser:
+    properties:
+      email:
+        type: string
+      first_name:
+        type: string
+      id:
+        type: string
+      last_name:
+        type: string
+    type: object
+  v1.createRequest:
+    properties:
+      email:
+        example: user@example.com
+        type: string
+      first_name:
+        example: John
+        type: string
+      last_name:
+        example: Doe
+        type: string
+      password:
+        example: password
+        minLength: 3
+        type: string
+    required:
+    - email
+    - first_name
+    - last_name
+    - password
+    type: object
+  v1.createResponse:
+    properties:
+      id:
+        type: string
+    type: object
 host: localhost:8000
 info:
   contact: {}
@@ -24,4 +69,66 @@ paths:
       summary: Show API info
       tags:
       - api info
+  /user:
+    get:
+      consumes:
+      - application/json
+      description: Show all users
+      operationId: all
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/v1.allResponse'
+        "500":
+          description: ""
+      summary: Show all users
+      tags:
+      - users
+    post:
+      consumes:
+      - application/json
+      description: Create user
+      operationId: create
+      parameters:
+      - description: User info
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/v1.createRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/v1.createResponse'
+        "400":
+          description: ""
+        "500":
+          description: ""
+      summary: Create user
+      tags:
+      - users
+  /user/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Remove user
+      operationId: delete
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ""
+        "400":
+          description: ""
+        "500":
+          description: ""
+      summary: Remove user
+      tags:
+      - users
 swagger: "2.0"
