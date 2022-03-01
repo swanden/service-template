@@ -1,3 +1,3 @@
 # Service template
 
-Template for Golang services.
+Clean Architecture template for Golang services.
